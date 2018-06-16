@@ -180,10 +180,15 @@ let people = [{
     "drug": "Thymupar"
   }]
 
-//   let totalDranksAverage = people.map(person => person.mimosasCount)
-//                      .reduce((dranks, nextDrank) => dranks + nextDrank) / people.length;
-//   console.log('Dranks', totalDranksAverage);
-  
+// get the average mimosas drank using map() first to just get an array
+// of the drinks then reduce to get a total count
+// let totalDranksAverage = people.map(person => person.mimosasCount)
+//                     .reduce((dranks, nextDrank) => dranks + nextDrank) / people.length;
+// console.log('Dranks', totalDranksAverage);
+
+
+// get the total mimosas drank by those who have had 
+// less than 50 mimosas
 // let totalMimosas = people.map(person => person.mimosasCount);
 
 // let total = totalMimosas  
@@ -191,10 +196,10 @@ let people = [{
 //                 .reduce((x, y) => x + y);
 // console.log(total);
 
-// avg mimosas for those whose drug is more than one word  
+// get the avg mimosas for those whose drug is more than one word  
 // or less than one word
-let brief = people.filter(person => !person.drug.includes(' '));
-brief.forEach(person => console.log(`${person.name.first} takes ${person.drug}`));
-let briefMimosasAverage = brief.reduce((x, y) => x + y.mimosasCount, 0) / brief.length;
-console.log('briefMimosasAverage', briefMimosasAverage);
+// let brief = people.filter(person => !person.drug.includes(' '));
+// brief.forEach(person => console.log(`${person.name.first} takes ${person.drug}`));
+// let briefMimosasAverage = brief.reduce((x, y) => x + y.mimosasCount, 0) / brief.length;
+// console.log('briefMimosasAverage', briefMimosasAverage);
 
