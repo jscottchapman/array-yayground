@@ -123,7 +123,9 @@ let parkers = [{
 // console.log(sumOfAges);
 
 //chain map and reduce to get the average age of the parkers
-// let average = (parkers.map(parker => parker.age).reduce((x, y) => x + y)) / parkers.length;
+let ages = parkers.map(parker => parker.age)
+                    .reduce((x, y) => x + y)
+let average = ages / parkers.length;
 
 // console.log(average);
 
@@ -139,10 +141,28 @@ let parkers = [{
   //NOTE: map over the parkers so you just have ages in an array,
   //    then reduce that array 
   //    then get the average using that reduction
+// let fiveAndUp = parkers.filter
+// let totalAge  = fiveAndUp.reduce
+// let average = total/fiveAndUp.length
+        
+//   //use filter then reduce to find out the average age 
+//   //of those who parked in rows 5 and up
 
-  //use filter then reduce to find out the average age 
-  //of those who parked in rows 5 and up
+//   //use filter then reduce to get the average age of those who had
+//   //a one word buzzword versus the average age of those
+//   //whose buzzword is more than one word(ie has dashes or spaces)
 
-  //use filter then reduce to get the average age of those who had
-  //a one word buzzword versus the average age of those
-  //whose buzzword is more than one word(ie has dashes or spaces)
+//   let briefPeople = parkers.filter(parker => parker.buzzword)
+//   let average = 
+  // let verboseWord = parkers.filter(parker => parker.buzzword.indexOf(' ') > -1 || parker.buzzword.indexOf('-') > -1);
+  // console.log(verboseWord);
+  let numberOfBriefParkers = 0;
+  let briefPeopleTotalAge = parkers.filter(parker => {
+    if(!parker.buzzword.includes(' ') && !parker.buzzword.includes('-')) {
+      let myFavorite = 'numbers';
+      numberOfBriefParkers += 1;
+      return true;
+    } 
+  }).reduce((x, y) => x + y.age, 0);
+                           
+  console.log(briefPeopleTotalAge/ numberOfBriefParkers);
