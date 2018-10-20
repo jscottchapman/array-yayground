@@ -1,21 +1,23 @@
 let books = [
-    {   
-        name: 'Slaughterhouse Five',
-        author: 'Kurt Vonnegut',
-        publishDate: 1969,
-        isFunny: true
-    },{
-        name: 'the Republic',
-        author: 'Plato',
-        publishDate: -380,
-        isFunny: false
-    },{
-        name: 'The Autobiography of Malcolm X',
-        author: 'Alex Haley',
-        publishDate: 1965,
-        isFunny: false
-    }
-]
+  {
+    name: "Slaughterhouse Five",
+    author: "Kurt Vonnegut",
+    publishDate: 1969,
+    isFunny: true
+  },
+  {
+    name: "the Republic",
+    author: "Plato",
+    publishDate: -380,
+    isFunny: false
+  },
+  {
+    name: "The Autobiography of Malcolm X",
+    author: "Alex Haley",
+    publishDate: 1965,
+    isFunny: false
+  }
+];
 
 //reduce
 //use reduce to get the total years of the publishDate's
@@ -37,16 +39,13 @@ let books = [
 // }
 //let authorsNames = books.map((book, index, books) => console.log(`${index + 1}. ${book.author}`));
 
-
 //filter
 //use filter to just print the funny books
 // let funnyBooks = books.filter(book => book.isFunny === false);
-// funnyBooks.map(book => console.log(book.name));
-
-
-
-
+//funnyBooks.map(book => console.log(book.name));
 
 //use filter, and startsWith() to print out the books
 //that begin with the word 'the'
-books.filter(book => book.name.toLowerCase().startsWith('the')).forEach(book => console.log(book.name));
+// books
+//   .filter(book => book.name.toLowerCase().startsWith("the"))
+//   .forEach(book => console.log(book.name));
