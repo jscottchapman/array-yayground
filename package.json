@@ -1,7 +1,7 @@
 {
   "name": "array-yayground",
   "version": "1.0.0",
-  "description": "",
+  "description": "a practice area for arrays",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/jscottchapman/array-yayground.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "J Scott Chapman",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/jscottchapman/array-yayground/issues"
